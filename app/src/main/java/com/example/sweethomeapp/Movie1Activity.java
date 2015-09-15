@@ -33,7 +33,7 @@ public class Movie1Activity extends Activity implements
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_movie1);
 
         getWindow().setFormat(PixelFormat.TRANSPARENT);
         mPreview = (SurfaceView) findViewById(R.id.surfaceView1);
