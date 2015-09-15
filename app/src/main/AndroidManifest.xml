@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sweethomeapp" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TopActivity"
+            android:label="@string/title_activity_top" >
+        </activity>
+        <activity
+            android:name=".Info1Activity"
+            android:label="@string/title_activity_info1" >
+        </activity>
+        <activity
+            android:name=".Info2Activity"
+            android:label="@string/title_activity_info2" >
+        </activity>
+        <activity
+            android:name=".Movie1Activity"
+            android:label="@string/title_activity_movie1" >
+        </activity>
+        <activity
+            android:name=".Question1Activity"
+            android:label="@string/title_activity_question1" >
+        </activity>
+        <activity
+            android:name=".Movie2Activity"
+            android:label="@string/title_activity_movie2" >
+        </activity>
+        <activity
+            android:name=".Question2Activity"
+            android:label="@string/title_activity_question2" >
+        </activity>
+        <activity
+            android:name=".Movie3Activity"
+            android:label="@string/title_activity_movie3" >
+        </activity>
+        <activity
+            android:name=".Question3Activity"
+            android:label="@string/title_activity_question3" >
+        </activity>
+        <activity
+            android:name=".Movie4Activity"
+            android:label="@string/title_activity_movie4" >
+        </activity>
+        <activity
+            android:name=".Question4Activity"
+            android:label="@string/title_activity_question4" >
+        </activity>
+        <activity
+            android:name=".Movie5Activity"
+            android:label="@string/title_activity_movie5" >
+        </activity>
+        <activity
+            android:name=".Question5Activity"
+            android:label="@string/title_activity_question5" >
+        </activity>
+        <activity
+            android:name=".Movie6Activity"
+            android:label="@string/title_activity_movie6" >
+        </activity>
+        <activity
+            android:name=".Question6Activity"
+            android:label="@string/title_activity_question6" >
+        </activity>
+        <activity
+            android:name=".End1Activity"
+            android:label="@string/title_activity_end1" >
+        </activity>
+        <activity
+            android:name=".End2Activity"
+            android:label="@string/title_activity_end2" >
+        </activity>
+        <activity
+            android:name=".End3Activity"
+            android:label="@string/title_activity_end3" >
+        </activity>
+    </application>
+
+</manifest>
