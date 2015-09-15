@@ -1,5 +1,7 @@
 package com.example.sweethomeapp;
 
+import android.content.Intent;
+import android.os.Handler;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -8,31 +10,31 @@ import android.view.MenuItem;
 
 public class TopActivity extends ActionBarActivity {
 
+    private Handler hdl = null;
+    private OpSplashHandler or = null;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_top);
+
+        hdl = new Handler();
+        // 第２引数で切り替わる秒数(ミリ秒)を指定
+        or = new OpSplashHandler();
+        hdl.postDelayed(or, 3000);
+
+
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_top, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+    // Opening SplashHandlerクラス
+    class OpSplashHandler implements Runnable {
+        public void run() {
+            Intent intent = new Intent(TopActivity.this, Movie1Activity.class);
+            startActivity(intent);
+            TopActivity.this.finish();
         }
-
-        return super.onOptionsItemSelected(item);
     }
+
+
+
 }
